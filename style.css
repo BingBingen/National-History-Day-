@@ -3,6 +3,7 @@ Link: https://www.joshwcomeau.com/css/custom-css-reset/     */
 
 *, *::before, *::after{
     box-sizing: border-box;
+    /* border: 1px solid rgb(176, 98, 98); */
 }
 
 /* Removes default margin for all elements except dialogs. Pseudo-elements do not have default margins, etc. */
@@ -44,5 +45,126 @@ h1, h2, h3, h4, h5, h6{
     text-wrap: balance;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 /* ------------------------------------------------------------------------------------- */
+:root{
+    --bg-color: #e3b04b;
+    --page-color: #f1d6ab;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.background-img{
+    min-height: 100dvh;
+
+    background: url(./images/statue-harbor-bg.jpeg);
+    background-repeat: repeat;
+    background-size: 70rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.content-page{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-color);
+    padding: 1rem;
+    width: max(25rem, 50dvw);
+    
+}
+
+.title{
+    justify-self: center;
+    width: min(38ch, 100%); 
+    text-align: center;
+
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+    word-spacing: normal;
+}
+
+figcaption{
+    font-size: .7rem;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    gap: .4rem;
+    margin: 1rem 1.5rem 1rem;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: space-evenly;
+
+    border-radius: .5rem;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    margin: 1rem 2rem;
+    padding: .5rem;
+    background-color: #777;   
+    color: white;
+}
+
+.headings{
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* ---------- THESIS ----------- */
+.thesis-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.thesis-figure{
+    display: flex; 
+    flex-direction: column;
+    flex: 1;
+}
+
+.thesis-figure > img{
+    width: 70%;
+    margin: auto;
+
+}
+
+.thesis-container > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.text{
+    max-width: 65ch;
+    font-size: .8rem;
+}
