@@ -3,7 +3,7 @@ Link: https://www.joshwcomeau.com/css/custom-css-reset/     */
 
 *, *::before, *::after{
     box-sizing: border-box;
-    /* border: 1px solid rgb(176, 98, 98); */
+    /* outline: 1px solid rgb(176, 98, 98); */
 }
 
 /* Removes default margin for all elements except dialogs. Pseudo-elements do not have default margins, etc. */
@@ -137,16 +137,20 @@ a:hover{
     text-decoration: underline;
 }
 
+figure{
+    display: flex; 
+    flex-direction: column;
+}
 
 /* ---------- THESIS ----------- */
-.thesis-container{
+.thesis-container,
+.origins-container{
     display: flex;
     gap: 1rem;
 }
 
-.thesis-figure{
-    display: flex; 
-    flex-direction: column;
+.thesis-figure,
+.origins-figure{
     flex: 1;
 }
 
@@ -156,7 +160,8 @@ a:hover{
 
 }
 
-.thesis-container > p{
+.thesis-container > p,
+.origins-container > div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,3 +173,92 @@ a:hover{
     max-width: 65ch;
     font-size: .8rem;
 }
+
+.text-no-limit{
+    font-size: .8rem;
+
+}
+
+/* ----------- Origins --------- */
+.origins-text-container{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    margin-top: -2rem;
+}
+
+.separator{
+    width: 100%;
+    border-top: 1px dotted honeydew; 
+    margin: 2rem 0; 
+}
+
+cite{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.blue-line{
+    border-right: .25rem solid rgb(66, 135, 245);
+    margin-left: 1rem;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.labor-world-quote,
+.the-commoner-quote{
+    display: flex; 
+    gap: 1rem;
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.growing-resentment{
+    display: flex;
+    gap: 1rem;
+}
+
+.growing-resentment-text,
+.growing-resentment-figure{
+    flex-basis: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+.media-figure{
+    padding: 0 5rem;
+    margin: 1.5rem 0;
+}
+
+.media-images > div{
+    display: flex;
+    gap: 1rem;
+}
+
+.upper-images figure{
+    padding: 0 1rem;
+}
+
+.chinese-invasion-figure{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+/* ----------Resistance--------- */ 
+.resistance-container{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.resistance-right img{
+    display: inline-block;
+    width: 65%;
+    margin: auto;
+}
+
+/* ---------- Legacy ----- */
