@@ -207,7 +207,8 @@ cite{
 }
 
 .labor-world-quote,
-.the-commoner-quote{
+.the-commoner-quote,
+.legacy-quote{
     display: flex; 
     gap: 1rem;
 }
@@ -262,3 +263,19 @@ cite{
 }
 
 /* ---------- Legacy ----- */
+.fight-the-virus-figure{
+    margin: 2rem;
+}
+
+/* ------- Conclusion ----- */
+.conclusion-figure img{
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+}
+
+/* ----- Sources ---- */
+.source-paper{
+    width: 100%;
+    height: 25rem; 
+}
